@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.codeforz.android" android:versionCode="1" android:versionName="0.1-beta">
+
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="16"/>
+
+<!--
+    <uses-permission android:name="android.permission.INTERNET" />
+    <permission android:name="com.codeforz.bankdroid.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.codeforz.bankdroid.permission.C2D_MESSAGE" />
+
+    &lt;!&ndash; App receives GCM messages. &ndash;&gt;
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    &lt;!&ndash; GCM requires a Google account. &ndash;&gt;
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    &lt;!&ndash; Keeps the processor from sleeping when a message is received. &ndash;&gt;
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    &lt;!&ndash;Required by GA&ndash;&gt;
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    &lt;!&ndash;<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />&ndash;&gt;
+-->
+
+    <application android:icon="@drawable/icon2" android:label="@string/app_name" android:theme="@style/Theme.Sherlock.Light"
+                 android:name=".Bankdroid">
+
+<!--
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.codeforz.bankdroid" />
+            </intent-filter>
+        </receiver>
+-->
+
+<!--
+        <receiver android:name=".BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+-->
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
